@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín, Alejandra?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffebee;
+            color: #d32f2f;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+        .hidden {
+            display: none;
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 2em;
+            color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Alejandra Morales!</h1>
+    <p>Este 14 de febrero, quiero que seas mi San Valentín. ¿Aceptas?</p>
+    <button onclick="mostrarRespuesta()">¡Haz clic aquí!</button>
+    <div id="response" class="hidden">
+        <p>¡Gracias por aceptar, Alejandra! 💖</p>
+    </div>
+
+    <script>
+        function mostrarRespuesta() {
+            document.getElementById('response').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
